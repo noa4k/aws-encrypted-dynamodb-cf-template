@@ -27,6 +27,7 @@ Resources:
           AttributeType: 'S'
         - AttributeName: 'invoice_number'
           AttributeType: 'S'
+      # Key Schema
       KeySchema:
         - AttributeName: 'client_email'
           KeyType: 'HASH'
@@ -36,7 +37,7 @@ Resources:
         ReadCapacityUnits: 1
         WriteCapacityUnits: 1
       TableName: Client_Invoice
-
+# Output
 Outputs:
     ClientInvoiceTable:
         Description: 'Client Invoice Table'
